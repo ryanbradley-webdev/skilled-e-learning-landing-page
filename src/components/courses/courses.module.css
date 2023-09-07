@@ -1,0 +1,7 @@
+.heading {
+    padding-inline: 28px;
+    padding-block: 24px 32px;
+    color: var(--clr-white);
+    background: var(--gradient-light);
+    border-radius: 10px;
+}
