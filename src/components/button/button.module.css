@@ -4,7 +4,20 @@
     font: var(--font-body-md);
     font-weight: 700;
     color: var(--clr-white);
-    background: var(--gradient-light);
     border-radius: 56px;
     border: none;
+}
+
+.button[data-variant='light'] {
+    background: var(--gradient-light);
+}
+
+.button[data-variant='dark'] {
+    background: var(--gradient-dark);
+}
+
+.button[data-variant='solid'] {
+    background: var(--clr-dark-blue);
+    height: 48px;
+    min-width: 140px;
 }
