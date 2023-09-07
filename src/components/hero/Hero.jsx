@@ -31,7 +31,7 @@ export default function Hero() {
                 className={styles.img_container}
             >
 
-
+                <img src="/image-hero-mobile.png" alt="" />
 
             </div>
 
