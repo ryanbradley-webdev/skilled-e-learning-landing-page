@@ -1,3 +1,4 @@
 #root {
     padding: 16px;
+    background: linear-gradient(to bottom, var(--clr-white), #F0F2FF);
 }

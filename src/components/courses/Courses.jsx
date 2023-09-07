@@ -1,3 +1,4 @@
+import { COURSE_DATA } from '../../courseData/courseData'
 import CourseCard from '../courseCard/CourseCard'
 import styles from './courses.module.css'
 
@@ -19,10 +20,12 @@ export default function Courses() {
                 className={styles.card_grid}
             >
 
-                <CourseCard
-                    title='Animation'
-                    description='Learn the latest animation techniques to create stunning motion design and captivate your audience.'
-                />
+                {COURSE_DATA.map(data => (
+                    <CourseCard
+                        key={crypto.randomUUID()}
+                        {...data}
+                    />
+                ))}
 
             </div>
 

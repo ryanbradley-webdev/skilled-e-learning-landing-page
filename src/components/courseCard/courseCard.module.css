@@ -4,6 +4,8 @@
     justify-items: start;
     padding-inline: 28px;
     padding-bottom: 32px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px hwb(233 2% 44% / 0.05);
 }
 
 .card img {
