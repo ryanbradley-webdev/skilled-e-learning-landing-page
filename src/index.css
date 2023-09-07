@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
 
 *,
 *::before,
@@ -6,4 +6,59 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --clr-white: #FFF;
+  --clr-grey: #83869A;
+  --clr-pink-pri: #F74780;
+  --clr-pink-sec: #FFA7C3;
+  --clr-blue: #666CA3;
+  --clr-dark-blue: #13183F;
+  --gradient-light: linear-gradient(to bottom, #FF6F48, #F02AA6);
+  --gradient-dark: linear-gradient(to bottom, #4851FF, #F02AA6);
+  --font-fam: 'Plus Jakarta Sans', Arial, sans-serif;
+  --font-head-xl: 800 40px/51px var(--font-fam);
+  --font-head-lg: 800 32px var(--font-fam);
+  --font-head-md: 800 24px/32px var(--font-fam);
+  --font-head-sm: 800 20px var(--font-fam);
+  --font-body-md: 500 16px/26px var(--font-fam);
+  --font-body-sm: 700 14px/28px var(--font-fam);
+}
+
+@media screen and (min-width: 769px) {
+  :root {
+    --font-head-xl: 800 56px/70px var(--font-fam);
+    --font-head-lg: 800 40px/51px var(--font-fam);
+    --font-head-md: 800 32px/40px var(--font-fam);
+    --font-head-sm: 800 24px/28px var(--font-fam);
+    --font-body-md: 500 18px/28px var(--font-fam);
+    --font-body-sm: 700 16px/28px var(--font-fam);
+  }
+}
+
+html {
+  font: var(--font-body-md);
+  color: var(--clr-grey);
+}
+
+h1,
+h4 {
+  color: var(--clr-dark-blue);
+}
+
+h1 {
+  font: var(--font-head-xl);
+}
+
+h2 {
+  font: var(--font-head-lg);
+}
+
+h3 {
+  font: var(--font-head-md);
+}
+
+h4 {
+  font: var(--font-head-sm);
 }
