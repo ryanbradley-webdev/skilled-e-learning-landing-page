@@ -1,0 +1,10 @@
+.button {
+    height: 56px;
+    min-width: 167px;
+    font: var(--font-body-md);
+    font-weight: 700;
+    color: var(--clr-white);
+    background: var(--gradient-light);
+    border-radius: 56px;
+    border: none;
+}
