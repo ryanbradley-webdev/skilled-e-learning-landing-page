@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding-inline: 16px;
+    padding-block: 36px;
+    background-color: var(--clr-dark-blue);
+}
+
+.footer img {
+    width: 89px;
+    height: auto;
+}
