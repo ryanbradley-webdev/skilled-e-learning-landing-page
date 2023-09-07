@@ -5,3 +5,9 @@
     background: var(--gradient-light);
     border-radius: 10px;
 }
+
+.card_grid {
+    display: grid;
+    row-gap: 40px;
+    margin-block: 40px
+}

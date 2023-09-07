@@ -1,0 +1,25 @@
+.card {
+    display: grid;
+    row-gap: 20px;
+    justify-items: start;
+    padding-inline: 28px;
+    padding-bottom: 32px;
+}
+
+.card img {
+    margin-top: -28px;
+}
+
+.card h4 {
+    margin-bottom: 16px;
+}
+
+.card button {
+    background-color: transparent;
+    border: none;
+    color: var(--clr-pink-pri);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
