@@ -1,8 +1,18 @@
 #root {
-    background: linear-gradient(to bottom, var(--clr-white), #F0F2FF);
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, var(--clr-white), #F0F2FF);
 }
 
 header,
 main {
-    padding-inline: 16px;
+  width: 100%;
+  padding-inline: 16px;
+}
+
+@media screen and (min-width: 500px) {
+  header,
+  main {
+    padding-inline: 40px;
+  }
 }

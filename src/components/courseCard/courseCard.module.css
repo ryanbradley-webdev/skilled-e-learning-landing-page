@@ -1,27 +1,33 @@
 .card {
-    display: grid;
-    row-gap: 20px;
-    justify-items: start;
-    padding-inline: 28px;
-    padding-bottom: 32px;
-    border-radius: 10px;
-    box-shadow: 0 25px 50px hwb(233 2% 44% / 0.05);
+  display: grid;
+  row-gap: 20px;
+  justify-items: start;
+  padding-inline: 28px;
+  padding-bottom: 32px;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px hwb(233 2% 44% / 0.05);
 }
 
 .card img {
-    margin-top: -28px;
+  margin-top: -28px;
+}
+
+@media screen and (min-width: 500px) {
+  .card img {
+    margin-bottom: 8px;
+  }
 }
 
 .card h4 {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .card button {
-    background-color: transparent;
-    border: none;
-    color: var(--clr-pink-pri);
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
+  background-color: transparent;
+  border: none;
+  color: var(--clr-pink-pri);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
 }

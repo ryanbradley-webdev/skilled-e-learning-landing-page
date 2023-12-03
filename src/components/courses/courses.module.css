@@ -1,13 +1,25 @@
 .heading {
-    padding-inline: 28px;
-    padding-block: 24px 32px;
-    color: var(--clr-white);
-    background: var(--gradient-light);
-    border-radius: 10px;
+  padding-inline: 28px;
+  padding-block: 24px 32px;
+  color: var(--clr-white);
+  background: var(--gradient-light);
+  border-radius: 10px;
 }
 
 .card_grid {
-    display: grid;
-    row-gap: 40px;
-    margin-block: 40px
+  display: grid;
+  row-gap: 40px;
+  margin-block: 40px;
+}
+
+@media screen and (min-width: 500px) {
+  .heading {
+    padding-top: 56px;
+  }
+
+  .card_grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 56px;
+    column-gap: 10px;
+  }
 }

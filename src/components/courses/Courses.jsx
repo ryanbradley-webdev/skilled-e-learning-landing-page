@@ -3,32 +3,32 @@ import CourseCard from '../courseCard/CourseCard'
 import styles from './courses.module.css'
 
 export default function Courses() {
-    return (
-        <section>
+  return (
+    <section>
 
-            <div
-                className={styles.heading}
-            >
+      <div
+          className={styles.card_grid}
+      >
 
-                <h3>
-                    Check out our most popular courses!
-                </h3>
+        <div
+          className={styles.heading}
+        >
 
-            </div>
+          <h3>
+              Check out our most popular courses!
+          </h3>
 
-            <div
-                className={styles.card_grid}
-            >
+        </div>
 
-                {COURSE_DATA.map(data => (
-                    <CourseCard
-                        key={crypto.randomUUID()}
-                        {...data}
-                    />
-                ))}
+        {COURSE_DATA.map(data => (
+          <CourseCard
+            key={crypto.randomUUID()}
+            {...data}
+          />
+        ))}
 
-            </div>
+      </div>
 
-        </section>
-    )
+    </section>
+  )
 }

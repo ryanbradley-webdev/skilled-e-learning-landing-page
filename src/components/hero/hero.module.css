@@ -1,16 +1,36 @@
 .hero {
-    padding-top: 38px;
+  padding-top: 38px;
+}
+
+@media screen and (min-width: 500px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 310px;
+  }
 }
 
 .heading {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 28px;
 }
 
-.img_container img {
+@media screen and (max-width: 500px) {
+  .img_container img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .img_container {
+    display: flex;
+    align-items: flex-end;
+    height: 490px;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: -50px;
+  }
 }
