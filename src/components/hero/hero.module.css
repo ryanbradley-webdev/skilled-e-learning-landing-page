@@ -1,11 +1,16 @@
 .hero {
   padding-top: 38px;
+  max-width: 1110px;
+  margin-inline: auto;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 662px) {
   .hero {
     display: grid;
     grid-template-columns: 1fr 310px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 110px;
   }
 }
 
@@ -17,14 +22,14 @@
   margin-bottom: 28px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 661px) {
   .img_container img {
     width: 100%;
     height: auto;
   }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 662px) {
   .img_container {
     display: flex;
     align-items: flex-end;

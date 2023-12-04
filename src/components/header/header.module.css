@@ -1,11 +1,19 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    padding-top: 24px;
+    max-width: 1190px;
+    margin-inline: auto;
+  }
 }
 
 .header img {
-    width: 89px;
-    height: auto;
+  width: 89px;
+  height: auto;
 }

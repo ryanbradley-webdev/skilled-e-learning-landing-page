@@ -3,7 +3,7 @@ import Button from '../button/Button'
 import styles from './hero.module.css'
 
 export default function Hero() {
-  const matches = useMediaQuery('(max-width: 500px)')
+  const matches = useMediaQuery('(max-width: 661px)')
 
   return (
     <section
