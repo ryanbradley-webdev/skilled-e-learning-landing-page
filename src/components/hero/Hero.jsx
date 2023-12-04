@@ -3,7 +3,10 @@ import Button from '../button/Button'
 import styles from './hero.module.css'
 
 export default function Hero() {
-  const matches = useMediaQuery('(max-width: 661px)')
+  const screenSize = useMediaQuery({
+    mobileMax: '(max-width: 661px)',
+    tabletMax: '(max-width: 999px'
+  })
 
   return (
     <section
@@ -34,7 +37,7 @@ export default function Hero() {
         className={styles.img_container}
       >
 
-        <img src={`/image-hero-${matches ? 'mobile' : 'tablet'}.png`} alt="" />
+        <img src={`/image-hero-${screenSize}.png`} alt="" />
 
       </div>
 

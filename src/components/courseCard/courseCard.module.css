@@ -31,3 +31,7 @@
   font-weight: 700;
   line-height: 28px;
 }
+
+.card button:is(:hover, :focus) {
+  color: #FFA7C3;
+}

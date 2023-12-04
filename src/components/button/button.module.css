@@ -1,23 +1,48 @@
 .button {
-    height: 48px;
-    min-width: 140px;
-    font: var(--font-body-md);
-    font-weight: 700;
-    color: var(--clr-white);
-    border-radius: 56px;
-    border: none;
+  height: 48px;
+  min-width: 140px;
+  font: var(--font-body-md);
+  font-weight: 700;
+  color: var(--clr-white);
+  border-radius: 56px;
+  border: none;
+}
+
+@media screen and (min-width: 769px) {
+  .button {
+    width: 167px;
+    height: 56px;
+  }
 }
 
 .button[data-variant='light'] {
-    height: 56px;
-    min-width: 167px;
-    background: var(--gradient-light);
+  height: 56px;
+  min-width: 167px;
+  background: var(--gradient-light);
+}
+
+.button[data-variant='light']:is(:hover, :focus) {
+  opacity: 0.5;
 }
 
 .button[data-variant='dark'] {
-    background: var(--gradient-dark);
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-dark);
+}
+
+.button[data-variant='dark']:is(:hover, :focus)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: white;
+  opacity: 0.5;
 }
 
 .button[data-variant='solid'] {
-    background: var(--clr-dark-blue);
+  background: var(--clr-dark-blue);
+}
+
+.button[data-variant='solid']:is(:hover, :focus) {
+  background-color: #666CA3;
 }
