@@ -16,9 +16,20 @@
 
 @media screen and (min-width: 1000px) {
   .hero {
+    grid-template-columns: 1fr 363px;
+  }
+}
+
+@media screen and (min-width: 1114px) {
+  .hero {
     grid-template-columns: 457px 1fr;
-    column-gap: 130px;
     margin-top: 170px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hero {
+    column-gap: 130px;
   }
 }
 

@@ -5,7 +5,7 @@ import styles from './hero.module.css'
 export default function Hero() {
   const screenSize = useMediaQuery({
     mobileMax: '(max-width: 661px)',
-    tabletMax: '(max-width: 999px'
+    tabletMax: '(max-width: 1113px)'
   })
 
   return (
